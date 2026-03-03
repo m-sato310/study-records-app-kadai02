@@ -120,7 +120,7 @@ function App() {
         <button onClick={addStudyRecord}>登録</button>
         <br />
         {(!studyContent || !studyHour) && (
-          <span style={{ color: 'red' }}>入力されていない項目があります</span>
+          <span style={{ color: 'blue' }}>入力されていない項目があります</span>
         )}
         <br />
         <span>合計時間: {totalStudyHours}/ 1000(h)</span>
