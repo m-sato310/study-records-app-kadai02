@@ -28,4 +28,11 @@ export default defineConfig([
       'no-unused-vars': ['error', { varsIgnorePattern: '^[A-Z_]' }],
     },
   },
+  // テストファイル専用の設定：Jestのグローバル変数（describe, test, expect など）を認識させる
+  {
+    files: ['**/*.test.{js,jsx}', '**/*.spec.{js,jsx}'],
+    languageOptions: {
+      globals: globals.jest,
+    },
+  },
 ]);
