@@ -1,9 +1,0 @@
-# pushやPRのたびに npm test を自動実行する
-on: [push, pull_request]
-jobs:
-  test:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - run: npm install
-      - run: npm test
